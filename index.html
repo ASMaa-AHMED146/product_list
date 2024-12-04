@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/code.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>product list</title>
+</head>
+<body>
+    <div class="container ">
+        <div class="cont row ">
+            <div class="product col-lg-9 col-md-12">
+                <h1 class="">Desserts</h1>
+                <div class="boxs row "> 
+                    <span class="under"></span>
+                            <div class="box col-lg-4 col-md-5 col-sm-6">
+                                <div class="img">
+                                    <img src="images/image-panna-cotta-tablet.jpg" class="img-fluid mb-3" alt="">
+                                    <div class=" click " > 
+                                        <button class="add-cart rounded-pill bg-light ">
+                                            <img src="images/icon-add-to-cart.svg" alt="">
+                                            Add to Cart
+                                        </button>
+                                    </div>
+                                    <button class="add  rounded-pill " >
+                                        <i onclick=increment(this) data-n="0" class="fa-solid fa-plus"></i>
+                                        <div class="num">0</div>
+                                        <i onclick=decrement() class="fa-solid fa-minus"></i>
+                                    </button>
+                                </div>
+                                <h6 class="text-secondary mt-4">Waffle</h6>
+                                <h5>Waffle with berries</h5>
+                                <p style="color: orange;">$6.50</p>
+                            </div>
+                            
+                </div>
+            </div>
+            
+            <div class="cart col-lg-3 col-md-12 align-self-start ">
+                 <h3 class="text-center">Your Cart (0)</h3>
+                 <div class="appear text-center pb-5">
+                    <img src="images/illustration-empty-cart.svg" class="" alt="">
+                    <p class="">Your added items will appear here</p>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/code.js"></script>
+</body>
+</html>

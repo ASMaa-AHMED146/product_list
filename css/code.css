@@ -1,0 +1,75 @@
+body
+{
+    font-family: "Red Hat Mono", monospace;
+}
+.container
+{
+    margin-top: 50px;
+}
+.product h1
+{
+    margin-bottom: 30px;
+}
+.boxs
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+.box img
+{
+    border-radius: 5px;
+}
+.box .img
+{
+    position: relative;
+}
+.box .add-cart,
+.box .add
+{   width: 140px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, 75%); 
+    border: 1px solid orange;
+} 
+.box .add-cart
+{
+   z-index: 2;
+}
+/* .add-cart:hover 
+{   
+    z-index: -1;
+} */
+.add
+{   
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+   color: rgb(255, 224, 205);
+   display: flex;
+   z-index: 1;
+}
+.cart
+{
+    background-color: oldlace;
+} 
+h3
+{
+    color: orange;
+    padding: 20px;
+}
+
+.add i
+{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 19px;
+    padding: 1px;
+    
+}
+.box .img div.cliked
+{
+    display: none;
+}
