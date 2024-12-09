@@ -1,0 +1,192 @@
+body
+{
+    font-family: "Red Hat Mono", monospace;
+}
+.container
+{
+    margin-top: 50px;
+    transition: transform .35s;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+header .icon i{
+    font-size: 30px;
+    color: orange;
+}
+header .icon
+{
+    position: relative;
+    cursor: pointer;
+}
+header .icon span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: -15px;
+}
+.product h1
+{
+    margin-bottom: 30px;
+}
+.boxs
+{
+    display: flex;
+    flex-direction: row;
+    /* background-color: red; */
+}
+.box img
+{
+    border-radius: 5px;
+}
+.box 
+{
+    position: relative;
+}
+.box .add-cart,
+.box .add
+{   width: 140px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%, 57%); 
+    border: 1px solid orange;
+} 
+.add
+{   
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+   color: rgb(255, 224, 205);
+   display: flex;
+   /* z-index: 1; */
+}
+.cart
+{
+    background-color: oldlace;
+} 
+h3
+{
+    color: orange;
+    padding: 20px;
+}
+.boxs .add-cart.remove
+{
+    display: none;
+}
+.add i
+{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 19px;
+    padding: 1px;
+    
+}
+/* .box .img div.cliked
+{
+    display: none;
+} */
+.cart{
+    width: 430px;
+    position: fixed;
+    inset: 0 -430 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70px 1fr 60px;
+    
+}
+body.apear .cart
+{
+    inset: 0 0 0 auto;
+}
+
+.cart .item
+{
+    
+    display: grid;
+    grid-template-columns:70px  1fr 70px 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.cart .item .text
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+.cart .item i.fa-x
+{
+    position: absolute;
+    top: 20px;
+    color: red;
+}
+.cart .item .name
+{
+    display: flex;
+    align-items: center;
+    height: 69px;
+}
+
+/* body.apear .container
+{
+    transform: translateX(430px);
+} */
+/* .cart .item .te
+{
+    text-align: center;
+} */
+/* .cart .item h6{
+    width: 100%;
+} */
+.cart .item:nth-child(odd)
+{
+    background-color: rgba(255, 166, 0, 0.263);
+}
+.cart .buttons
+{
+    width: 100%;
+    display: grid;
+    background-color: rgba(255, 166, 0, 0.263);
+    grid-template-columns: repeat(2,1fr);
+}
+.cart .buttons button
+{  
+    outline: none;
+    border: none;
+    color: orange;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cart .buttons .close
+{
+   border-right: 1px  solid orange;
+}
+.cart .ITEMS
+{
+    overflow: auto;
+}
+.cart .ITEMS::-webkit-scrollbar
+{
+    width: 0;
+}
