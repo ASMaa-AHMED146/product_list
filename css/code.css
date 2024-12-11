@@ -1,0 +1,205 @@
+body
+{
+    font-family: "Red Hat Mono", monospace;
+    background-color: rgba(255, 166, 0, 0.083) !important;
+}
+.container
+{
+
+    max-width: 90vw;
+    width: 900px;
+    transition: transform .35s;
+    margin: 50px auto;
+    text-align: center;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+    width: 90%;
+    margin: auto auto 20px auto;
+
+}
+header .icon i{
+    font-size: 30px;
+    color: orange;
+}
+header .icon
+{
+    position: relative;
+    cursor: pointer;
+}
+header .icon span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: -15px;
+}
+header h1
+{
+    margin-bottom: 30px;
+}
+
+.box .img
+{
+    position: relative;
+}
+.box .add-cart,
+.box .add
+{   width: 140px;
+    padding: 5px 10px;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translateX(-50%);
+    border: 1px solid orange;
+    z-index: 0;
+} 
+
+.boxs .box .pro{
+    border-radius: 10px;
+}
+.add
+{   
+    justify-content: space-between;
+    align-items: center;
+    background-color: orange;
+   color: rgb(255, 224, 205);
+   display: flex;
+
+}
+.cart
+{
+    background-color: oldlace;
+} 
+h3
+{
+    color: orange;
+    padding: 20px;
+}
+
+.add i
+{
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 19px;
+    padding: 1px;
+    
+}
+
+.cart{
+    width: 430px;
+    position: fixed;
+    inset: 0 -430 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70px 1fr 60px;
+    
+}
+body.apear .cart
+{
+    inset: 0 0 0 auto;
+}
+body.apear .container
+{
+    transform: translateX(-10px);
+}
+body.apear .boxs
+{
+    max-width: calc(100% - 350px);
+}
+.add-cart.remove
+{
+    display: none;
+}
+/* body.remove button.add-cart
+{
+    z-index: -1;
+} */
+/* body.remove_add button.add-cart
+{
+    display: block;
+} */
+.cart .item
+{
+    
+    display: grid;
+    grid-template-columns:70px  1fr 70px ;
+    justify-content: space-between;
+    align-items: center;
+    height: 68px;
+    margin-bottom: 5px;
+    position: relative;
+    width: 430px;
+    padding-right: 20px;
+}
+.cart .icon
+{
+    padding-top: 7px;
+    width: 70px;
+    text-align: center;
+}
+.cart .item .text
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;  
+}
+.cart .item i.fa-x
+{
+    position: absolute;
+    top: 20px;
+    color: red;
+}
+.cart .item .name
+{
+    display: flex;
+    align-items: center;
+    height: 69px;
+}
+
+.cart .item:nth-child(odd)
+{
+    background-color: rgba(255, 166, 0, 0.263);
+}
+.cart .buttons
+{
+    width: 100%;
+    display: grid;
+    background-color: rgba(255, 166, 0, 0.263);
+    grid-template-columns: repeat(2,1fr);
+}
+.cart .buttons button
+{  
+    outline: none;
+    border: none;
+    color: orange;
+    background-color: transparent;
+    cursor: pointer;
+}
+.cart .buttons .close
+{
+   border-right: 1px  solid orange;
+}
+.cart .ITEMS
+{
+    overflow: auto;
+}
+.cart .ITEMS::-webkit-scrollbar
+{
+    width: 0;
+}
+
